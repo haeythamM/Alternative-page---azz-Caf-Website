@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This Is Not the Jazz Café Website — Professional Insights on Web Development | Haeytham Almalak</title>
+    <!-- Author: Haeytham Almalak -->
+    <!-- Date: 10/31/2025 -->
+    <style>
+        :root {
+            --primary-color: #2C3E50;
+            --secondary-color: #34495E;
+            --accent-color: #3498DB;
+            --text-color: #ECF0F1;
+            --background-color: #1A252F;
+            --card-color: #2C3E50;
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            --transition: all 0.3s ease;
+        }
+
+        .light-theme {
+            --primary-color: #3498DB;
+            --secondary-color: #2980B9;
+            --accent-color: #E74C3C;
+            --text-color: #2C3E50;
+            --background-color: #ECF0F1;
+            --card-color: #FFFFFF;
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            transition: var(--transition);
+        }
+
+        body {
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+            border-bottom: 1px solid var(--primary-color);
+            margin-bottom: 30px;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--accent-color);
+        }
+
+        .theme-toggle {
+            background-color: var(--primary-color);
+            color: var(--text-color);
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            box-shadow: var(--shadow);
+        }
+
+        .theme-toggle:hover {
+            background-color: var(--accent-color);
+            transform: translateY(-2px);
+        }
+
+        .hero {
+            background-color: var(--card-color);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            color: var(--accent-color);
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .notice {
+            background-color: var(--primary-color);
+            padding: 20px;
+            border-radius: 8px;
+            margin: 30px 0;
+            border-left: 5px solid var(--accent-color);
+        }
+
+        .notice p {
+            margin-bottom: 10px;
+        }
+
+        .content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .card {
+            background-color: var(--card-color);
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+        }
+
+        .card h3 {
+            color: var(--accent-color);
+            margin-bottom: 15px;
+            font-size: 1.4rem;
+        }
+
+        .card p {
+            margin-bottom: 10px;
+        }
+
+        .card ul {
+            list-style: disc;
+            margin-left: 20px;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 40px;
+            border-top: 1px solid var(--primary-color);
+            color: var(--accent-color);
+            font-weight: 500;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body class="dark-theme">
+    <div class="container">
+        <header>
+            <div class="logo">Design Template</div>
+            <button class="theme-toggle" id="themeToggle">
+                <span>Dark Theme</span>
+                <span>🌙</span>
+            </button>
+        </header>
+
+        <section class="hero">
+            <h1>This Is Not the Jazz Café Website — Professional Insights on Web Development</h1>
+            <p>
+                This demo page was created as a polished alternative to the original Jazz Café link.
+                It aims to demonstrate professional web design standards through structure, clarity, and accessibility —
+                reflecting how strong design builds trust in digital experiences.
+            </p>
+        </section>
+
+        <div class="notice">
+            <p><strong>Notice:</strong> This page is not associated with Jazz Café. It serves as an educational
+                showcase, highlighting layout organization, visual balance, and adaptive design using pure HTML and CSS.
+            </p>
+            <p>Designed and developed by <strong>Haeytham Almalak</strong>.</p>
+        </div>
+
+        <div class="content">
+            <div class="card">
+                <h3>1) User Experience & Visual Hierarchy</h3>
+                <p>
+                    Design is not decoration — it’s communication. A clear hierarchy, balanced spacing, and consistent
+                    styling
+                    help users focus, understand content quickly, and feel confident navigating.
+                </p>
+                <ul>
+                    <li>Structured headings guide the reader’s eye.</li>
+                    <li>Readable text improves comprehension and retention.</li>
+                    <li>Consistent color and tone reinforce credibility.</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>2) Accessibility & User Comfort</h3>
+                <p>
+                    Accessibility is a core principle, not an afterthought. This design adapts to both light and dark
+                    modes,
+                    ensuring comfort and visibility in all environments.
+                </p>
+                <ul>
+                    <li>Respects system preferences (<code>prefers-color-scheme</code>).</li>
+                    <li>Maintains strong contrast for readability (WCAG 2.1 compliant).</li>
+                    <li>Uses intuitive visual cues for interactive elements.</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>3) Responsive Design & Performance</h3>
+                <p>
+                    A responsive layout ensures a seamless experience across devices. Flexible grids and scalable
+                    components
+                    allow the design to feel natural whether viewed on a phone, tablet, or desktop.
+                </p>
+                <ul>
+                    <li>Uses relative units (<code>rem</code>, <code>%</code>) for flexibility.</li>
+                    <li>Optimized spacing prevents layout shifts.</li>
+                    <li>Tested across multiple screen resolutions for stability.</li>
+                </ul>
+            </div>
+        </div>
+
+        <footer>
+            <p>This professional demo was created as a temporary landing page in place of the Jazz Café link —
+                presenting reliable insights into modern web development principles.</p>
+            <p>© 2025 <strong>Haeytham Almalak</strong>. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script>
+        const themeToggle = document.getElementById('themeToggle');
+        const body = document.body;
+
+        // Check system preferences
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
+            body.classList.add('light-theme');
+            updateButtonText();
+        }
+
+        themeToggle.addEventListener('click', function () {
+            body.classList.toggle('light-theme');
+            updateButtonText();
+        });
+
+        function updateButtonText() {
+            if (body.classList.contains('light-theme')) {
+                themeToggle.innerHTML = '<span>Light Theme</span> <span>☀️</span>';
+            } else {
+                themeToggle.innerHTML = '<span>Dark Theme</span> <span>🌙</span>';
+            }
+        }
+
+        // Listen for system preference changes
+        window.matchMedia('(prefers-color-scheme: light)').addEventListener('change', e => {
+            if (e.matches) {
+                body.classList.add('light-theme');
+            } else {
+                body.classList.remove('light-theme');
+            }
+            updateButtonText();
+        });
+    </script>
+</body>
+
+</html>
